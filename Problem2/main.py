@@ -35,10 +35,11 @@ from shallow_learning import SVM, DT, Boosting, RF, Boosting_evaluate, SVM_evalu
 from shallow_learning import ensemble_predictions, RF_evaluate, ensemble_predictions_majority, ensemble_predictions_majority_prioritize_SVM_EVALUATE
 
 ##### Initialize wandb #####
-os.environ["WANDB_API_KEY"] = ''
-project_name = 'HELLO2' 
-entity = 'marcs20'             
-wandb.login()
+##### Initialize wandb (optional) #####
+project_name = "ds807-appliedexam"
+# If you want wandb logging: set WANDB_API_KEY in your shell and uncomment:
+# wandb.login()
+######################################
 ##### Set wandb to offline mode #####
 # os.environ['WANDB_MODE'] = 'dryrun'
 ############################
